@@ -26,14 +26,8 @@ void findGenes(std::string& genome) {
                 std::string nextCheck = possible_gene.substr(geneEnd+3, possible_gene.length() - (geneEnd+3));
                 findGenes(nextCheck);
             }
-
-
         }
-
-
     }
-
-
 }
 
 size_t findEnd(std::string& possible_gene) {
@@ -57,7 +51,6 @@ size_t findEnd(std::string& possible_gene) {
             else {
                 found = std::string::npos;
             }
-
         }
     }
 
